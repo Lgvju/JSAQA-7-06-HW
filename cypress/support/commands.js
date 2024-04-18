@@ -29,3 +29,11 @@ Cypress.Commands.add("addBookToFavorite", (title, description, author) => {
     cy.wait(1000);
     cy.contains('Add to favorite').click();
   });
+
+  Cypress.Commands.add("deleteBookFromFavorite", (title, description, author) => {
+   
+    cy.get("h4").click();
+    cy.contains("Delete from favorite").click();
+    cy.get('.text-light > .ml-2').click();
+    
+  });  

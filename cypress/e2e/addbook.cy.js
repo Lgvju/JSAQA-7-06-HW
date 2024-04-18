@@ -13,7 +13,7 @@ it("Should successfully add book to favorite", () => {
 });
 
 it("Should successfully deleted book from favorite", () => {
-  cy.addBookToFavorite("RibaÌ„su enjiniaringu : Python ni yoru bainari kaiseki gihoÌ„", "Техническая литература", " Justin Seitz; Keiichi AndoÌ");
+  cy.deleteBookFromFavorite("Black Hat Python", "Программирование для хакеров и пентестеров", "Justin Seitz, Tim Arnold");
   cy.contains('Delete from favorite').should('be.visible');
 });
   
